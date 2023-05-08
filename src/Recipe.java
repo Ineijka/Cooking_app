@@ -12,6 +12,7 @@ public class Recipe {
         this.time = time;
         this.type = type;
     }
+
     public String getIngredients() {
         return ingredients;
     }
@@ -35,17 +36,18 @@ public class Recipe {
     public void setDescription(String description) {
         this.description = description;
     }
+
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
 
     @Override
     public String toString() {
-        return "Recipe" +
-                " Name: " + name + '\n' +
-                "Ingredients:" + ingredients + '\n' +
-                "Description:" + description + '\n' +
-                "Cooking time:" + time + " minutes" + '\n' +
-                "Recipe type:" + type + '\n';
+        return  " " + '\n' +
+                "Recipe Name: " + name + '\n' +
+                "Ingredients: " + ingredients + '\n' +
+                "Description: " + description + '\n' +
+                "Cooking time: " + time + " minutes" + '\n' +
+                "Recipe type: " + type + '\n';
     }
-    }
+}
